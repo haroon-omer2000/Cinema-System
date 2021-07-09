@@ -1,0 +1,2 @@
+# Cinema-System
+In this project, I developed a full stack web application using React + Java Script for the front end and Flask + Python for the backend. The system covers the basic functionality of a cinema system for the users as well as an admin. Admin can add, remove a movie from the admin portal where as a customer can view, book, search a movie from their portal along with other privileges. 
