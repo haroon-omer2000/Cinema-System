@@ -1,0 +1,967 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "montserrat", sans-serif;
+  background-color: #223343;
+  background-image: url("https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+}
+
+header {
+  padding: 50px 15px 0px;
+}
+
+header h1 {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 500;
+  text-align: center;
+}
+
+main {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 15px;
+}
+
+.searchbox {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  outline: none;
+  background: none;
+  background-color: #eee;
+  border-radius: 8px;
+  color: #53565a;
+  font-size: 20px;
+  font-weight: 300px;
+  transition: 0.4s ease-out;
+}
+
+.container-input1 {
+  display: flex;
+}
+
+.container-input2 {
+  display: flex;
+}
+
+.container-input3 {
+  display: flex;
+}
+
+.enter-movie-imdbid {
+  display: block;
+  width: 50%;
+  padding: 15px;
+  outline: none;
+  background: none;
+  background-color: #eee;
+  border-radius: 8px;
+  color: #53565a;
+  font-size: 20px;
+  font-weight: 300px;
+  transition: 0.4s ease-out;
+}
+
+.enter-movie-year {
+  display: block;
+  width: 50%;
+  padding: 15px;
+  outline: none;
+  background: none;
+  background-color: #eee;
+  border-radius: 8px;
+  color: #53565a;
+  font-size: 20px;
+  font-weight: 300px;
+  transition: 0.4s ease-out;
+}
+
+.enter-movie-name {
+  flex: 2;
+  display: block;
+  width: 50%;
+  padding: 15px;
+  outline: none;
+  background: none;
+  background-color: #eee;
+  border-radius: 8px;
+  color: #53565a;
+  font-size: 20px;
+  font-weight: 300px;
+  transition: 0.4s ease-out;
+}
+
+.enter-movie-plot {
+  display: block;
+  width: 50%;
+  padding: 15px;
+  outline: none;
+  background: none;
+  background-color: #eee;
+  border-radius: 8px;
+  color: #53565a;
+  font-size: 20px;
+  font-weight: 300px;
+  transition: 0.4s ease-out;
+}
+
+.enter-movie-poster {
+  display: block;
+  width: 50%;
+  padding: 15px;
+  outline: none;
+  background: none;
+  background-color: #eee;
+  border-radius: 8px;
+  color: #53565a;
+  font-size: 20px;
+  font-weight: 300px;
+  transition: 0.4s ease-out;
+}
+
+.enter-movie-rating {
+  display: block;
+  width: 50%;
+  padding: 15px;
+  outline: none;
+  background: none;
+  background-color: #eee;
+  border-radius: 8px;
+  color: #53565a;
+  font-size: 20px;
+  font-weight: 300px;
+  transition: 0.4s ease-out;
+}
+
+.enter-movie-name:focus {
+  box-shadow: 0px 0px 8px 3px #4484c4;
+}
+
+.enter-movie-imdbid:focus {
+  box-shadow: 0px 0px 8px 3px #4484c4;
+}
+
+.enter-movie-year:focus {
+  box-shadow: 0px 0px 8px 3px #4484c4;
+}
+
+.enter-movie-rating:focus {
+  box-shadow: 0px 0px 8px 3px #4484c4;
+}
+
+.enter-movie-plot:focus {
+  box-shadow: 0px 0px 8px 3px #4484c4;
+}
+
+.enter-movie-poster:focus {
+  box-shadow: 0px 0px 8px 3px #4484c4;
+}
+
+.searchbox:focus {
+  box-shadow: 0px 0px 8px 3px #4484c4;
+}
+
+.wrapper {
+  text-align: right;
+}
+
+.Nav-links {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: left;
+  list-style: none;
+}
+
+.AddMovie header {
+  color: white;
+}
+
+header h3 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 100;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.login-button {
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #4484c4;
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  appearance: none;
+  cursor: pointer;
+  transition: 0.4s ease-out;
+}
+
+.login-button:hover {
+  background: #223343;
+}
+
+.AddMovie-button {
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #4484c4;
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  appearance: none;
+  cursor: pointer;
+  transition: 0.4s ease-out;
+}
+
+.AddMovie-button:hover {
+  background: #223343;
+}
+
+.register-button {
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #4484c4;
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  appearance: none;
+  cursor: pointer;
+  transition: 0.4s ease-out;
+}
+
+.register-button:hover {
+  background: #223343;
+}
+
+@keyframes blink {
+  0%,
+  22%,
+  36%,
+  75% {
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  }
+  28%,
+  33% {
+    color: #ff65bd;
+    text-shadow: none;
+  }
+  82%,
+  97% {
+    color: #ff2483;
+    text-shadow: none;
+  }
+}
+
+@keyframes shine {
+  0% {
+    color: #6b1839;
+    text-shadow: none;
+  }
+  100% {
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  }
+}
+
+@keyframes shine2 {
+  0% {
+    color: white;
+    text-shadow: none;
+  }
+  100% {
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #c5c1c5, 0 0 1.5rem #0e0d0d,
+      -0.2rem 0.1rem 1rem #0b0b0e, 0.2rem 0.1rem 1rem #0f0f0f,
+      0 -0.5rem 2rem #121213, 0 0.5rem 3rem #111111;
+  }
+}
+
+.login-register {
+  animation: shine2 2s forwards;
+}
+
+@keyframes flicker {
+  from {
+    opacity: 1;
+  }
+
+  4% {
+    opacity: 0.9;
+  }
+
+  6% {
+    opacity: 0.85;
+  }
+
+  8% {
+    opacity: 0.95;
+  }
+
+  10% {
+    opacity: 0.9;
+  }
+
+  11% {
+    opacity: 0.922;
+  }
+
+  12% {
+    opacity: 0.9;
+  }
+
+  14% {
+    opacity: 0.95;
+  }
+
+  16% {
+    opacity: 0.98;
+  }
+
+  17% {
+    opacity: 0.9;
+  }
+
+  19% {
+    opacity: 0.93;
+  }
+
+  20% {
+    opacity: 0.99;
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  26% {
+    opacity: 0.94;
+  }
+
+  28% {
+    opacity: 0.98;
+  }
+
+  37% {
+    opacity: 0.93;
+  }
+
+  38% {
+    opacity: 0.5;
+  }
+
+  39% {
+    opacity: 0.96;
+  }
+
+  42% {
+    opacity: 1;
+  }
+
+  44% {
+    opacity: 0.97;
+  }
+
+  46% {
+    opacity: 0.94;
+  }
+
+  56% {
+    opacity: 0.9;
+  }
+
+  58% {
+    opacity: 0.9;
+  }
+
+  60% {
+    opacity: 0.99;
+  }
+
+  68% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.9;
+  }
+
+  72% {
+    opacity: 0.95;
+  }
+
+  93% {
+    opacity: 0.93;
+  }
+
+  95% {
+    opacity: 0.95;
+  }
+
+  97% {
+    opacity: 0.93;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.flicker {
+  animation: shine 2s forwards, blink 3s 2s infinite;
+}
+
+.Home-Button {
+  animation: shine 2s forwards, blink 10s 1s infinite;
+}
+
+.Cinemovies-home {
+  font-family: Clip;
+  color: #ffe6ff;
+  text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+    -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+    0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  animation: shine 2s forwards, flicker 3s infinite;
+}
+
+.feedback-button {
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #4484c4;
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  appearance: none;
+  cursor: pointer;
+  transition: 0.4s ease-out;
+}
+
+.feedback-button:hover {
+  background: #223343;
+}
+
+.image {
+  width: 21em;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+}
+
+.Login-form {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: fit-content;
+}
+
+.form-group label {
+  font-size: 20px;
+}
+
+.form-group input {
+  margin-top: 6px;
+  min-width: 18em;
+  height: 37px;
+  padding: 0px 10px;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  background-color: #f3f3f3;
+  border: 0;
+  border-radius: 4px;
+  margin-bottom: 31px;
+  transition: all 250ms ease-in-out;
+}
+
+.form-group :hover input {
+  margin-top: 6px;
+  min-width: 18em;
+  height: 37px;
+  padding: 0px 10px;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  background-color: #f3f3f3;
+  border: 0;
+  border-radius: 4px;
+  margin-bottom: 31px;
+  transition: all 250ms ease-in-out;
+}
+
+.feedback {
+  width: 50%;
+}
+
+.feedback-container {
+  color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Login-footer {
+  margin-top: 3em;
+}
+
+.Login-base-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Login-header {
+  font-size: 24px;
+  font-family: "Open Sans", sans-serif;
+  animation: shine1 2s forwards;
+}
+
+.Login-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.confirm-card-payment {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.confirm-login {
+  display: flex;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: 700;
+  position: relative;
+  background-color: black;
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  appearance: none;
+  cursor: pointer;
+  transition: 0.4s ease-out;
+}
+
+.confirm-login:hover {
+  background: white;
+  color: black;
+}
+
+.button {
+  position: fixed;
+  top: 5%;
+  color: white;
+  font-style: oblique;
+  background-color: rgb(95, 147, 160);
+  border-radius: 10;
+  align-content: center;
+}
+
+.currents {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px -15px;
+}
+
+.currents .current {
+  width: 33.333%;
+  min-width: 250px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.currents .current img {
+  display: block;
+  width: 100%;
+}
+
+@keyframes shine1 {
+  0% {
+    color: white;
+    text-shadow: none;
+  }
+  100% {
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #c5c1c5, 0 0 1.5rem #3a337e,
+      -0.2rem 0.1rem 1rem #271a72, 0.2rem 0.1rem 1rem #140a6d,
+      0 -0.5rem 2rem #060763, 0 0.5rem 3rem #382766;
+  }
+}
+
+.Now-Showing {
+  text-align: center;
+  animation: shine1 2s forwards;
+}
+
+.currents .current h3 {
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px;
+  background: yellow;
+  flex: 1 1 100%;
+  transition: 0.4s ease-out;
+}
+
+.currents .current:hover h3 {
+  background: #fff;
+  color: #223343;
+}
+
+.results {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px -15px;
+}
+
+.results .result {
+  width: 33.333%;
+  min-width: 250px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.results .result img {
+  display: block;
+  width: 100%;
+}
+
+.results .result h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px;
+  background: #445565;
+  flex: 1 1 100%;
+  transition: 0.4s ease-out;
+}
+
+.results .result:hover h3 {
+  background: #fff;
+  color: #223343;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.popup .content {
+  display: block;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 25px;
+  color: #fff;
+}
+
+.popup .content h2 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.popup .content h2 span {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.popup .content .rating {
+  margin-bottom: 30px;
+}
+
+.popup .content .plot {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px -15px 30px;
+}
+
+.popup .content .plot img {
+  flex: 1 1 33%;
+  max-width: 300px;
+  padding: 0px 15px;
+}
+
+.popup .content .plot p {
+  flex: 1 1 33%;
+  padding: 15px;
+}
+
+.youtube {
+  flex: 1 1 33%;
+  padding: 15px;
+
+  height: 20vh;
+  width: 70vh;
+}
+
+.BookMovie {
+  display: block;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 25px;
+  color: #fff;
+}
+
+.BookMovie h2 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.BookMovie h2 span {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.BookMovie .rating {
+  margin-bottom: 30px;
+}
+
+.BookMovie .plot {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px -15px 30px;
+}
+
+.BookMovie .plot img {
+  flex: 1 1 50%;
+  max-width: 300px;
+  padding: 0px 15px;
+}
+
+.BookMovie .plot p {
+  flex: 1 1 50%;
+  padding: 15px;
+}
+
+.BookMovie form {
+  min-height: 20vh;
+  display: flex;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background-image: none;
+}
+
+.select {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.Ticket_Details {
+  justify-content: space-evenly;
+  display: flex;
+}
+
+.filter-todo {
+  padding: 1.1rem;
+}
+
+select {
+  color: black;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  width: 14rem;
+}
+
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  background: rgb(28, 101, 196);
+  cursor: pointer;
+  pointer-events: none;
+}
+
+.close {
+  display: flex;
+  position: relative;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: black;
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  appearance: none;
+  cursor: pointer;
+  transition: 0.4s ease-out;
+}
+
+.AddMovie .close:hover {
+  background: white;
+  color: black;
+}
+
+.popup .content .close {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #4484c4;
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  appearance: none;
+  cursor: pointer;
+  transition: 0.4s ease-out;
+}
+
+.popup .content .close:hover {
+  background: #223343;
+}
+
+.scrollTop {
+  color: yellow;
+  position: fixed;
+  width: 5%;
+  right: 5%;
+  bottom: 20px;
+  height: 20px;
+  justify-content: center;
+  cursor: pointer;
+  animation: fadeIn 0.3s;
+  transition: opacity 0.4s;
+  opacity: 2;
+}
+
+.scrollTop:hover {
+  opacity: 1;
+  color: white;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+.credit-card-input {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.content-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  justify-content: space-evenly;
+}
+
+.content-table thead tr {
+  background-color: #0b3169;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.content-table tbody tr:nth-of-type(odd) {
+  background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.content-table tbody tr.active-row {
+  font-weight: bold;
+  color: black;
+}
+
+.no-bookings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.no-bookings1 {
+  animation: shine1 2s forwards;
+  background-color: black;
+}
